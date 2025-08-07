@@ -46,7 +46,7 @@ public class Customer {
      * @deprecated
      * Método de teste apenas para explicar o fucnionamento de int
      * @return numero arbitrário
-     * 
+     *
      */
     public int getTotalAmount(){
         return 20;
