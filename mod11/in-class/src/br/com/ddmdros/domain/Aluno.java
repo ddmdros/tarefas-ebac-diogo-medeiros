@@ -1,4 +1,4 @@
-package br.com.ddmdros.lists;
+package br.com.ddmdros.domain;
 
 public class Aluno implements Comparable<Aluno> {
 

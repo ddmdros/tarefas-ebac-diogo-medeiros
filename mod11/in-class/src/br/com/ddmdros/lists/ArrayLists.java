@@ -1,4 +1,7 @@
 package br.com.ddmdros.lists;
+import br.com.ddmdros.domain.Aluno;
+import br.com.ddmdros.domain.ComparaNotaAluno;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -54,15 +57,23 @@ public class ArrayLists {
         System.out.println("****exemploListaOrdenadaAluno****");
         List<Aluno> lista = new ArrayList<Aluno>();
 
-        Aluno a = new Aluno("João Silva", "Linux básico", 0);
-        Aluno b = new Aluno("Antônio Sousa", "Open Office", 0);
-        Aluno c = new Aluno("Lúcia Ferreira", "Internet", 0);
+        Aluno a = new Aluno("João Silva", "Linux básico", 20);
+        Aluno b = new Aluno("Antônio Sousa", "Open Office", 30);
+        Aluno c = new Aluno("Lúcia Ferreira", "Internet", 10);
         lista.add(a);
         lista.add(b);
         lista.add(c);
-        System.out.println(lista);
+        System.out.println("Lista sem ordenação: " + lista);
         Collections.sort(lista);
-        System.out.println(lista);
+        System.out.println("Lista ordenada: " + lista);
+
+        ComparaNotaAluno comparaNotaAluno = new ComparaNotaAluno();
+        Collections.sort(lista, comparaNotaAluno);
+        System.out.println("Lista com ordenação por nota: " + lista);
+
+        System.out.println("");
+
+
 
     }
 
