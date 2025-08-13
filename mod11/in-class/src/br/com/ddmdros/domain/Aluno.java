@@ -1,5 +1,7 @@
 package br.com.ddmdros.domain;
 
+import java.util.Objects;
+
 public class Aluno implements Comparable<Aluno> {
 
     private String nome;
@@ -64,4 +66,15 @@ public class Aluno implements Comparable<Aluno> {
         return this.nome.compareTo(aluno.getNome());
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Aluno aluno = (Aluno) o;
+        return Double.compare(nota, aluno.nota) == 0 && Objects.equals(nome, aluno.nome) && Objects.equals(curso, aluno.curso) && Objects.equals(sala, aluno.sala);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, curso, nota, sala);
+    }
 }
