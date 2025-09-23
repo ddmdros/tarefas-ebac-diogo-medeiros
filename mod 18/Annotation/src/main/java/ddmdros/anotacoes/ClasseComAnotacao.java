@@ -1,3 +1,4 @@
+package ddmdros.anotacoes;
 
 @IPrimeiraAnotacao(value = "Diogo", bairros = "centro", numeroCasa = 37L)
 public class ClasseComAnotacao {
@@ -6,6 +7,6 @@ public class ClasseComAnotacao {
 
     private String nome;
 
-    
+
 
 }

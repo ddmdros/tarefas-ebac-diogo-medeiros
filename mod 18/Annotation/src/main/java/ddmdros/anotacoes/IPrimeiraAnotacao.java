@@ -1,3 +1,5 @@
+package ddmdros.anotacoes;
+
 import java.lang.annotation.*;
 
 @Documented
