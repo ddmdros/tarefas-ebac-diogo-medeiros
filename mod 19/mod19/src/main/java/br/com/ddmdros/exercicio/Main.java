@@ -1,4 +1,4 @@
-package br.com.ddmdros.exercicio;
+package br.com.ddmdros.tarefa_stream;
 import java.lang.annotation.Annotation;
 
 
