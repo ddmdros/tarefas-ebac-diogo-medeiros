@@ -2,7 +2,7 @@ package br.com.ddmdros.service;
 
 import br.com.ddmdros.dao.IContratoDao;
 
-public class ContratoService extends IContratoService {
+public class ContratoService implements IContratoService {
     private IContratoDao contratoDao;
 
     public ContratoService(IContratoDao dao) {
@@ -12,6 +12,24 @@ public class ContratoService extends IContratoService {
 
     public String salvar(){
         contratoDao.salvar();
+        return "Sucesso";
+    }
+
+    @Override
+    public String buscar() {
+        contratoDao.buscar();
+        return "Sucesso";
+    }
+
+    @Override
+    public String excluir() {
+        contratoDao.excluir();
+        return "Sucesso";
+    }
+
+    @Override
+    public String atualizar() {
+        contratoDao.atualizar();
         return "Sucesso";
     }
 }

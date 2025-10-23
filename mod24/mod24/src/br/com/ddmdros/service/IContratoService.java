@@ -1,8 +1,9 @@
 package br.com.ddmdros.service;
 
-public class IContratoService {
-    public String salvar() {
-        return "Sucesso";
-    };
+public interface IContratoService {
+    String salvar();
+    String buscar();
+    String excluir();
+    String atualizar();
 
 }
