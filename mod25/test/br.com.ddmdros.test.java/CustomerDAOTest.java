@@ -46,4 +46,10 @@ public class CustomerDAOTest {
     public void deleteCustomer(){
         customerDao.delete(customer.getCpf());
     }
+
+    @Test
+    public void modifyCustomer(){
+        customer.setName("Diogo Medeiros");
+        customerDao.modifyCustomer(customer);
+    }
 }

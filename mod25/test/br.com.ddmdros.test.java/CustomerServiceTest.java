@@ -52,4 +52,12 @@ public class CustomerServiceTest {
     public void deleteCustomer(){
         customerService.delete(customer.getCpf());
     }
+
+
+    @Test
+    public void modifyCustomer(){
+        customer.setName("Diogo Medeiros");
+        customerService.modifyCustomer(customer);
+        Assert.assertEquals("Diogo Medeiros", customer.getName());
+    }
 }

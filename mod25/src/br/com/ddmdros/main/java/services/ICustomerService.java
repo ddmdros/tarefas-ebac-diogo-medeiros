@@ -10,4 +10,6 @@ public interface ICustomerService {
     Customer findByCPF(Long cpf);
 
     void delete(Long cpf);
+
+    void modifyCustomer(Customer customer);
 }

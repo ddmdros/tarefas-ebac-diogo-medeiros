@@ -18,4 +18,9 @@ public class CustomerDAO implements ICustomerDAO {
     public void delete(Long cpf) {
 
     }
+
+    @Override
+    public void modifyCustomer(Customer customer) {
+
+    }
 }

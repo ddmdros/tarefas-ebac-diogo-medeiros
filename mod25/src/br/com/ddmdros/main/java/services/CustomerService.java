@@ -26,7 +26,13 @@ public class CustomerService implements ICustomerService {
 
     @Override
     public void delete(Long cpf) {
-        //customerDAO.delete(cpf);
+        customerDAO.delete(cpf);
+
+    }
+
+    @Override
+    public void modifyCustomer(Customer customer) {
+        customerDAO.modifyCustomer(customer);
 
     }
 }
